@@ -1,0 +1,13 @@
+<body>
+<p>Déja inscrit ?</p>
+<% if (messages) { %>
+    <p><%= messages.error %></p>
+<% } %>
+<form action="/authentification" method="post" >
+<input type="email" name="email" placeholder="username">
+<input type="password" name="password" placeholder="password">
+<button>login</button>
+</form>
+<p>Autres ?</p>
+<button>Gestion des utilisateurs</button>
+</body>
